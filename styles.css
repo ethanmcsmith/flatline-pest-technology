@@ -69,8 +69,8 @@ h3 { font-size: 23px; margin: 0; }
 .hero-mark .heartbeat-base { display: none; }
 .hero-mark .heartbeat-trace { stroke-dasharray: 520; stroke-dashoffset: 520; animation: heartbeat-draw 3s cubic-bezier(.35,.05,.3,1) infinite; }
 .hero-mark .dead-ant-image { position: absolute; left: 79.84%; top: 21.39%; width: 30.94%; aspect-ratio: 1; display: block; opacity: 0; background: var(--red); mask: url("assets/dead-ant.png") center / contain no-repeat; -webkit-mask: url("assets/dead-ant.png") center / contain no-repeat; transform-origin: center; animation: dead-ant-arrive 3s cubic-bezier(.2,.8,.25,1) infinite; }
-@keyframes heartbeat-draw { 0%,7% { stroke-dashoffset: 520; opacity: 0; } 12% { opacity: 1; } 61%,96% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
-@keyframes dead-ant-arrive { 0%,55% { opacity: 0; translate: 7px -8px; rotate: -10deg; scale: .7; } 59%,96% { opacity: 1; translate: 0 0; rotate: 0deg; scale: 1; } 100% { opacity: 0; translate: 0 3px; rotate: 0deg; scale: 1; } }
+@keyframes heartbeat-draw { 0%,7% { stroke-dashoffset: 520; opacity: 0; } 12% { opacity: 1; } 61%,94% { stroke-dashoffset: 0; opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+@keyframes dead-ant-arrive { 0%,55% { opacity: 0; translate: 7px -8px; rotate: -10deg; scale: .7; } 59%,94% { opacity: 1; translate: 0 0; rotate: 0deg; scale: 1; } 100% { opacity: 0; translate: 0 0; rotate: 0deg; scale: 1; } }
 .panel-kicker { color: #a8c8bb; font-weight: 850; text-transform: uppercase; letter-spacing: .12em; font-size: 12px; }
 .hero-panel h2 { font-size: clamp(28px, 3vw, 39px); }
 .check-list { padding: 0; margin: 28px 0 0; list-style: none; }
