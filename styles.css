@@ -321,6 +321,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--ink); outline: 3
   .client-grid { grid-template-columns: 1fr; }
   .client-grid li { min-height: 0; }
   .client-grid li img { height: 0; }
+  .client-categories li img { height: 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
