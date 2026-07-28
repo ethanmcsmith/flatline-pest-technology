@@ -114,13 +114,13 @@ h3 { font-size: 23px; margin: 0; }
 .service-card.accent-mint .card-label { color: white; background: var(--ink); }
 .service-media { height: 190px; overflow: hidden; background: var(--sand); border-radius: var(--radius) var(--radius) 0 0; transform: translateZ(0); }
 .service-media img { width: 100%; height: 100%; display: block; object-fit: cover; backface-visibility: hidden; transition: transform .45s ease; }
-.service-media img.crop-tick { object-position: center 54%; transform: translateX(22%) scale(1.78); }
+.service-media img.crop-tick { object-position: center 54%; transform: translate(30%, -8%) scale(1.78); }
 .service-media img.crop-bird { object-position: 58% 38%; transform: scale(1.16); }
 .service-media-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; color: var(--ink); background: linear-gradient(145deg,var(--mint),#c7ddd3); }
 .service-media-placeholder span { width: 58px; height: 58px; display: grid; place-items: center; border: 1px solid rgba(23,53,45,.2); border-radius: 50%; font-size: 18px; font-weight: 950; }
 .service-media-placeholder small { color: var(--muted); font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .09em; }
 .service-card:hover .service-media img { transform: scale(1.035); }
-.service-card:hover .service-media img.crop-tick { transform: translateX(22%) scale(1.84); }
+.service-card:hover .service-media img.crop-tick { transform: translate(30%, -8%) scale(1.84); }
 .service-card:hover .service-media img.crop-bird { transform: scale(1.2); }
 .service-card-body { flex: 1; display: flex; flex-direction: column; padding: 26px 28px 28px; }
 .card-label { width: fit-content; margin: -43px 0 17px; position: relative; z-index: 1; color: white; background: var(--red); border-radius: 99px; padding: 6px 10px; font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: .1em; }
