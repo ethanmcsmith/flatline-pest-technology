@@ -42,3 +42,10 @@ assets/tick 2.jpg
 assets/tick 3.jpg
 assets/dead-ant.png
 assets/dead ant new.png
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
