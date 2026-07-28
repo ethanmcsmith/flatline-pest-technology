@@ -93,7 +93,7 @@ h3 { font-size: 23px; margin: 0; }
 .split-heading > p { color: var(--muted); font-size: 18px; margin: 0 0 4px; }
 .centered { text-align: center; max-width: 760px; margin-inline: auto; }
 .service-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
-.service-card { position: relative; display: flex; flex-direction: column; min-height: 430px; overflow: hidden; border: 1px solid rgba(225,43,53,.72); border-radius: var(--radius); background: var(--mint); transition: .2s ease; }
+.service-card { position: relative; display: flex; flex-direction: column; min-height: 430px; overflow: hidden; border: 3px solid rgba(225,43,53,.72); border-radius: var(--radius); background: var(--mint); transition: .2s ease; }
 .service-card:hover { transform: translateY(-4px); box-shadow: 0 18px 42px rgba(23,53,45,.09); border-color: var(--red); }
 .js .service-card.animate-from-right,
 .js .service-card.animate-from-left { opacity: 0; transition: opacity .65s ease, transform .65s cubic-bezier(.2,.75,.25,1), box-shadow .2s ease, border-color .2s ease; }
