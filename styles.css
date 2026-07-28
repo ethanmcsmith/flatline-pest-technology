@@ -239,9 +239,13 @@ input:focus, select:focus, textarea:focus { border-color: var(--ink); outline: 3
 .client-grid li { aspect-ratio: 1; min-height: 0; display: flex; flex-direction: column; align-items: stretch; padding: 0; overflow: hidden; border: 1px solid #ddd9ce; border-radius: 16px; background: white; box-shadow: 0 8px 22px rgba(12,45,37,.06); font-weight: 800; line-height: 1.35; }
 .client-grid li img { width: 100%; height: 0; min-height: 0; flex: 1 1 auto; display: block; object-fit: cover; object-position: center; background: white; }
 .client-grid li span { flex: 0 0 auto; min-height: 82px; display: flex; align-items: center; padding: 18px 22px; border-top: 1px solid #eeeae1; }
-.client-categories li { justify-content: space-between; padding: 24px; background: linear-gradient(145deg,#ffffff 0%,#edf7f2 100%); }
-.client-categories li strong { color: var(--ink); font-size: 21px; line-height: 1.12; letter-spacing: -.02em; }
-.client-categories li span { min-height: 0; padding: 18px 0 0; border-top: 1px solid rgba(23,53,45,.12); color: var(--muted); font-size: 15px; font-weight: 650; }
+.client-categories li { position: relative; justify-content: flex-end; padding: 0; background: var(--ink); border: 0; }
+.client-categories li::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg,rgba(8,27,22,.08) 0%,rgba(8,27,22,.2) 35%,rgba(8,27,22,.86) 100%); z-index: 1; }
+.client-categories li img { position: absolute; inset: 0; width: 100%; height: 100%; min-height: 0; flex: none; object-fit: cover; transition: transform .45s ease; }
+.client-categories li:hover img { transform: scale(1.04); }
+.client-categories li div { position: relative; z-index: 2; padding: 24px; color: white; }
+.client-categories li strong { display: block; color: white; font-size: 21px; line-height: 1.12; letter-spacing: -.02em; }
+.client-categories li span { display: block; min-height: 0; padding: 14px 0 0; border-top: 1px solid rgba(255,255,255,.22); color: #d8e5e0; font-size: 15px; font-weight: 650; }
 .client-note { color: var(--muted); font-size: 12px; margin: 18px 0 0; }
 .reach-section { background: white; }
 .reach-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; align-items: start; }
