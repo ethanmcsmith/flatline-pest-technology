@@ -93,8 +93,8 @@ h3 { font-size: 23px; margin: 0; }
 .split-heading > p { color: var(--muted); font-size: 18px; margin: 0 0 4px; }
 .centered { text-align: center; max-width: 760px; margin-inline: auto; }
 .service-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
-.service-card { position: relative; display: flex; flex-direction: column; min-height: 430px; overflow: hidden; border: 8px solid rgba(225,43,53,.72); border-radius: var(--radius); background: var(--mint); transition: .2s ease; }
-.service-card:hover { transform: translateY(-4px); box-shadow: 0 18px 42px rgba(23,53,45,.09); border-color: var(--red); }
+.service-card { position: relative; display: flex; flex-direction: column; min-height: 430px; overflow: hidden; border: 8px solid var(--ink); border-radius: var(--radius); background: var(--mint); transition: .2s ease; }
+.service-card:hover { transform: translateY(-4px); box-shadow: 0 18px 42px rgba(23,53,45,.09); border-color: var(--ink-2); }
 .js .service-card.animate-from-right,
 .js .service-card.animate-from-left { opacity: 0; transition: opacity .65s ease, transform .65s cubic-bezier(.2,.75,.25,1), box-shadow .2s ease, border-color .2s ease; }
 .js .service-card.animate-from-right { transform: translateX(90px); }
@@ -111,7 +111,7 @@ h3 { font-size: 23px; margin: 0; }
 .service-card.accent-red .card-label { color: var(--red); background: white; }
 .service-card.accent-red p:not(.card-label) { color: #c7d8d2; }
 .service-card.accent-red a { color: white; }
-.service-card.accent-mint { background: var(--mint); color: var(--ink); border-color: rgba(225,43,53,.72); }
+.service-card.accent-mint { background: var(--mint); color: var(--ink); border-color: var(--ink); }
 .service-card.accent-mint .card-label { color: white; background: var(--ink); }
 .service-media { height: 190px; overflow: hidden; background: var(--sand); }
 .service-media img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .45s ease; }
